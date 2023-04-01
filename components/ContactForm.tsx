@@ -152,6 +152,18 @@ const ContactForm = () => {
                 />
               </div>
             </div>
+            {responseMessage.message && (
+              <div
+                role="alert"
+                className={`${
+                  responseMessage.isSuccessful
+                    ? 'flex justify-center p-4 mb-4 text-lg text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400'
+                    : 'flex justify-center p-4 mb-4 text-lg text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
+                }`}
+              >
+                <span className="font-medium">{responseMessage.message}</span>
+              </div>
+            )}
             <div className="flex flex-wrap mx-3 mb-6">
               <div className="w-full px-3">
                 <div className="md:flex md:items-center">
@@ -167,18 +179,6 @@ const ContactForm = () => {
                 </div>
               </div>
             </div>
-            {responseMessage.message && (
-              <div
-                role="alert"
-                className={`${
-                  responseMessage.isSuccessful
-                    ? 'flex justify-center p-4 mb-4 text-lg text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400'
-                    : 'flex justify-center p-4 mb-4 text-lg text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
-                }`}
-              >
-                <span className="font-medium">{responseMessage.message}</span>
-              </div>
-            )}
           </form>
         </div>
       </div>
