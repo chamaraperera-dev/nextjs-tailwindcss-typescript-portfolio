@@ -60,19 +60,6 @@ const ContactForm = () => {
         "
         >
           <form className="w-full max-w-lg " onSubmit={handleSubmit}>
-            {responseMessage.message && (
-              <div
-                role="alert"
-                className={`${
-                  responseMessage.isSuccessful
-                    ? 'flex justify-center p-4 mb-4 text-lg text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400'
-                    : 'flex justify-center p-4 mb-4 text-lg text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
-                }`}
-              >
-                <span className="font-medium">{responseMessage.message}</span>
-              </div>
-            )}
-
             <div className="flex flex-wrap mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
@@ -180,6 +167,18 @@ const ContactForm = () => {
                 </div>
               </div>
             </div>
+            {responseMessage.message && (
+              <div
+                role="alert"
+                className={`${
+                  responseMessage.isSuccessful
+                    ? 'flex justify-center p-4 mb-4 text-lg text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400'
+                    : 'flex justify-center p-4 mb-4 text-lg text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
+                }`}
+              >
+                <span className="font-medium">{responseMessage.message}</span>
+              </div>
+            )}
           </form>
         </div>
       </div>
