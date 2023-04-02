@@ -11,7 +11,13 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      screens: { sm: '480px', md: '768px', lg: '976px', xl: '1440pd' },
+      screens: {
+        xs: '320px',
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440pd',
+      },
       animation: {
         fadeIn: 'fadeIn 1.5s',
         bounce:

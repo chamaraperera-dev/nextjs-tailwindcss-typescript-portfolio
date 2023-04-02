@@ -152,10 +152,10 @@ const AboutSection = () => {
             <br />
             <p>
               I specialize in using the MERN (MongoDB, Express, React, Node.js)
-              stack for web development, as well as HTML, CSS, JavaScript,
-              TypeScript, Node.js, Express, MongoDB, and Mongoose. My expertise
-              in these technologies allows me to create dynamic and efficient
-              web applications that are user-friendly and accessible.
+              stack for web development, as well as HTML, CSS, JavaScript and
+              TypeScript. My expertise in these technologies allows me to create
+              dynamic and efficient web applications that are user-friendly and
+              accessible.
             </p>
             <br />
             <p>
