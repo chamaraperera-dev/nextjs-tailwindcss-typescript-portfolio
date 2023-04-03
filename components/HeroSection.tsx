@@ -8,7 +8,7 @@ import { HiArrowDown } from 'react-icons/hi';
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="mt-32 mb-32 sm:mb-24  md:py-52">
+      <div className="mt-32 mb-32 sm:mb-6  md:py-52">
         <div
           className=" flex flex-col
       text-center items-center justify-center md:flex-row md:text-left md:space-x-4"
