@@ -47,11 +47,7 @@ const skills = [
     src: './logos/gulp.svg',
     alt: 'gulp',
   },
-  {
-    link: 'https://pugjs.org',
-    src: './logos/pug.svg',
-    alt: 'pug',
-  },
+
   {
     link: 'https://reactjs.org/',
     src: './logos/react.svg',
@@ -93,9 +89,14 @@ const skills = [
     alt: 'express',
   },
   {
-    link: 'https://postman.com',
-    src: './logos/postman.svg',
-    alt: 'postman',
+    link: 'https://wordpress.org/',
+    src: './logos/wordpress.svg',
+    alt: 'wordpress',
+  },
+  {
+    link: 'https://elementor.com/',
+    src: './logos/elementor.svg',
+    alt: 'elementor',
   },
   {
     link: 'https://jestjs.io',
@@ -152,10 +153,10 @@ const AboutSection = () => {
             <br />
             <p>
               I specialize in using the MERN (MongoDB, Express, React, Node.js)
-              stack for web development, as well as HTML, CSS, JavaScript and
-              TypeScript. My expertise in these technologies allows me to create
-              dynamic and efficient web applications that are user-friendly and
-              accessible.
+              stack for web development, as well as HTML, CSS,
+              JavaScript,TypeScript and Wordpress. My expertise in these
+              technologies allows me to create dynamic and efficient web
+              applications that are user-friendly and accessible.
             </p>
             <br />
             <p>

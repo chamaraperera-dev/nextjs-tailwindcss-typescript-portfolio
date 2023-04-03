@@ -14,13 +14,23 @@ const projects = [
     link: 'https://app.naturesights.com/',
   },
   {
-    name: 'Pig Game',
+    name: 'Chamara Portfolio',
     description:
-      'Pig is a simple dice game first described in print in John Scarne in 1945.',
-    image: '/pig-game.png',
-    alt: 'pig-game-website',
-    github: 'https://github.com/chamaraperera-dev/pig-game',
-    link: 'https://start-pig-game.netlify.app/',
+      'This is my personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.',
+    image: '/chamara-portfolio.png',
+    alt: 'chamara-portfolio-website',
+    github:
+      'https://github.com/chamaraperera-dev/nextjs-tailwindcss-typescript-portfolio',
+    link: 'https://chamaraperera.dev/',
+  },
+  {
+    name: 'Save Mother Lanka Project',
+    description:
+      'This is a website created for a Healthcare crisis management fund in Sri Lanka. The website is built using WordPress and Elementor.',
+    image: '/savemotherlanka.png',
+    alt: 'savemotherlanka-website',
+    github: '#',
+    link: 'https://savemotherlanka.org/',
   },
 ];
 
