@@ -9,7 +9,7 @@ const projects = [
     description:
       'Nature Sights is a web application that allows users to book tours and view information about available tours.',
     image: '/nature-sights.png',
-    alt: 'nature-sights-website-photo',
+    alt: 'nature-sights-website',
     github: 'https://github.com/chamaraperera-dev/naturesights',
     link: 'https://app.naturesights.com/',
   },
@@ -18,7 +18,7 @@ const projects = [
     description:
       'Pig is a simple dice game first described in print in John Scarne in 1945.',
     image: '/pig-game.png',
-    alt: 'pig-game-website-photo',
+    alt: 'pig-game-website',
     github: 'https://github.com/chamaraperera-dev/pig-game',
     link: 'https://start-pig-game.netlify.app/',
   },
@@ -38,7 +38,11 @@ const ProjectSection = () => {
               <SlideUp offset="-300px 0px">
                 <div className="flex flex-col  md:flex-row md:space-x-12 ">
                   <div className="mt-8 md:w-1/2">
-                    <Link href={project.link} target="_blank">
+                    <Link
+                      href={project.link}
+                      target="_blank"
+                      aria-label={project.alt}
+                    >
                       <Image
                         src={project.image}
                         alt={project.alt}
@@ -54,7 +58,11 @@ const ProjectSection = () => {
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank">
+                      <Link
+                        href={project.github}
+                        target="_blank"
+                        aria-label={project.alt}
+                      >
                         {' '}
                         <BsGithub
                           size={30}
@@ -62,7 +70,11 @@ const ProjectSection = () => {
                         />
                       </Link>
 
-                      <Link href={project.link} target="_blank">
+                      <Link
+                        href={project.link}
+                        target="_blank"
+                        aria-label={project.alt}
+                      >
                         <BsArrowUpRightSquare
                           size={30}
                           className="hover:translate-y-1 transition-transform cursor-pointer"

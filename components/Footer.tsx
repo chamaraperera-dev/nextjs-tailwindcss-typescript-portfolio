@@ -19,6 +19,7 @@ const Footer = () => {
             href="https://github.com/chamaraperera-dev"
             rel="noreferrer"
             target="_blank"
+            aria-label="github"
           >
             <AiOutlineGithub
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
@@ -29,6 +30,7 @@ const Footer = () => {
             href="https://twitter.com/chamaraperera"
             rel="noreferrer"
             target="_blank"
+            aria-label="twitter"
           >
             <AiOutlineTwitter
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
@@ -40,6 +42,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/dr-chamara-perera/"
             rel="noreferrer"
             target="_blank"
+            aria-label="linkedin"
           >
             <AiOutlineLinkedin
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
