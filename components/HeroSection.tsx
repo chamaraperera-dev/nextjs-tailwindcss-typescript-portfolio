@@ -29,12 +29,13 @@ const HeroSection = () => {
             </h1>
             <p className="text-lg mt-6 mb-10 md:text-2xl">
               I&#39;m a {''}
-              <span className="font-semibold text-teal-600">
+              <span className="font-semibold text-teal-700">
                 Full Stack Developer{' '}
               </span>
               and medical doctor based in Brisbane, Australia.
             </p>
             <Link
+              href="/"
               to="projects"
               className="text-neutral-100 font-semibold px-6 py-3 bg-teal-700 rounded shadow hover:bg-teal-700 cursor-pointer"
               activeClass="active"
@@ -52,6 +53,7 @@ const HeroSection = () => {
       <div>
         <Link
           className="flex justify-center cursor-pointer"
+          href="/"
           to="about"
           activeClass="active"
           spy={true}

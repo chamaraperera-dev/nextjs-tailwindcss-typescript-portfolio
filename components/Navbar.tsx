@@ -83,6 +83,7 @@ const Navbar = () => {
               })}
               {currentTheme === 'dark' ? (
                 <button
+                  aria-label="Toggle light mode"
                   onClick={() => setTheme('light')}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
@@ -90,6 +91,7 @@ const Navbar = () => {
                 </button>
               ) : (
                 <button
+                  aria-label="Toggle dark mode"
                   onClick={() => setTheme('dark')}
                   className="bg-slate-100 p-2 rounded-xl"
                 >

@@ -180,7 +180,12 @@ const AboutSection = () => {
               {skills.map((item, id) => {
                 return (
                   <p key={id}>
-                    <a href={item.link} target="_blank" rel="noreferrer">
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={item.alt}
+                    >
                       <Image
                         src={item.src}
                         alt={item.alt}
