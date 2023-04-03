@@ -51,7 +51,7 @@ const ContactForm = () => {
   };
   return (
     <section id="contact">
-      <div className="my-16">
+      <div className="my-32">
         <h1 className="text-center font-bold text-4xl "> Contact Me</h1>
         <hr className="w-6 h-1 mx-auto mt-4 mb-6 bg-teal-500 border-0 rounded"></hr>
 
@@ -169,7 +169,7 @@ const ContactForm = () => {
                 <div className="md:flex md:items-center">
                   <div className="md:w-1/3">
                     <button
-                      className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                      className="shadow bg-teal-700 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                       type="submit"
                       value="Submit"
                     >

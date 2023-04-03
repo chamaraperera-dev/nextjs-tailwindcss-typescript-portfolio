@@ -4,122 +4,122 @@ import Image from 'next/image';
 const skills = [
   {
     link: 'https://www.w3.org/html/',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+    src: './logos/html5.svg',
     alt: 'html5',
   },
   {
     link: 'https://www.w3schools.com/css/',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+    src: './logos/css3.svg',
     alt: 'css3',
   },
   {
     link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+    src: './logos/javascript.svg',
     alt: 'javascript',
   },
   {
     link: 'https://www.typescriptlang.org/',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+    src: './logos/typescript.svg',
     alt: 'typescript',
   },
   {
     link: 'https://www.figma.com/',
-    src: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
+    src: './logos/figma.svg',
     alt: 'figma',
   },
   {
     link: 'https://getbootstrap.com',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
+    src: './logos/bootstrap.svg',
     alt: 'bootstrap',
   },
   {
     link: 'https://tailwindcss.com/',
-    src: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
+    src: './logos/tailwind.svg',
     alt: 'tailwind',
   },
   {
     link: 'https://sass-lang.com',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
+    src: '/logos/sass.svg',
     alt: 'sass',
   },
   {
     link: 'https://gulpjs.com',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg',
+    src: './logos/gulp.svg',
     alt: 'gulp',
   },
   {
     link: 'https://pugjs.org',
-    src: 'https://cdn.worldvectorlogo.com/logos/pug.svg',
+    src: './logos/pug.svg',
     alt: 'pug',
   },
   {
     link: 'https://reactjs.org/',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
+    src: './logos/react.svg',
     alt: 'react',
   },
   {
     link: 'https://redux.js.org',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+    src: './logos/redux.svg',
     alt: 'redux',
   },
   {
     link: 'https://nextjs.org/',
-    src: 'https://cdn.worldvectorlogo.com/logos/nextjs-2.svg',
+    src: './logos/nextjs.svg',
     alt: 'nextjs',
   },
   {
     link: 'https://www.mongodb.com/',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
+    src: '/logos/mongodb.svg',
     alt: 'mongodb',
   },
   {
     link: 'https://www.mysql.com/',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
+    src: './logos/mysql.svg',
     alt: 'mysql',
   },
   {
     link: 'https://www.npmjs.com',
-    src: 'https://www.vectorlogo.zone/logos/npmjs/npmjs-tile.svg',
+    src: './logos/npm.svg',
     alt: 'npm',
   },
   {
     link: 'https://nodejs.org',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
+    src: './logos/nodejs.svg',
     alt: 'nodejs',
   },
   {
     link: 'https://expressjs.com',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+    src: './logos/express.svg',
     alt: 'express',
   },
   {
     link: 'https://postman.com',
-    src: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
+    src: './logos/postman.svg',
     alt: 'postman',
   },
   {
     link: 'https://jestjs.io',
-    src: 'https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg',
+    src: './logos/jest.svg',
     alt: 'jest',
   },
   {
     link: 'https://parceljs.org',
-    src: 'https://www.vectorlogo.zone/logos/parceljs/parceljs-icon.svg',
+    src: './logos/parcel.svg',
     alt: 'parcel',
   },
   {
     link: 'https://git-scm.com/',
-    src: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+    src: './logos/git.svg',
     alt: 'git',
   },
   {
     link: 'https://www.docker.com/',
-    src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
+    src: './logos/docker.svg',
     alt: 'docker',
   },
   {
     link: 'https://heroku.com',
-    src: 'https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg',
+    src: './logos/heroku.svg',
     alt: 'heroku',
   },
 ];
@@ -127,7 +127,7 @@ const skills = [
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="my-12  md:pt-16 md:pb-16">
+      <div className="my-12  md:pt-16">
         <h1 className="text-center font-bold text-4xl"> About Me</h1>
         <hr className="w-6 h-1 mx-auto mt-4 mb-6 bg-teal-500 border-0 rounded"></hr>
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-12 md:space-y-0">
