@@ -9,8 +9,8 @@ export async function POST(req: NextRequest) {
       from: body.email,
       to: `Chamara Perera <${process.env.EMAIL_TO}>`,
       subject: body.subject,
-      text: body.message,
-      html: `<p>${body.message}</p>`,
+      text: `Name: ${body.firstName} ${body.lastName}\nEmail: ${body.email}\n\n${body.message}`,
+      html: `<p>Name: ${body.firstName} ${body.lastName}</p><p>Email: ${body.email}</p><p>${body.message}</p>`,
     };
 
     const transporter = nodemailer.createTransport({

@@ -17,7 +17,7 @@ export default function RootLayout({
   //Navbar wrapped inside the Providers component
   return (
     <html suppressHydrationWarning lang="en">
-      <body className="dark:bg-stone-900">
+      <body className=" dark:bg-stone-900">
         <Providers>
           <Navbar />
           {children}
