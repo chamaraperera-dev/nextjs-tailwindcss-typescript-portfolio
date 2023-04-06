@@ -142,7 +142,7 @@ const AboutSection = () => {
               Hi, my name is Chamara and I am a {''}
               <span className="font-bold">{'passionate'}</span>,
               <span className="font-bold">{' self-motivated'}</span>, full stack
-              developer and a medical doctor based in Brisbane, Australia.
+              developer based in Brisbane, Australia.
             </p>
             <br />
             <p>

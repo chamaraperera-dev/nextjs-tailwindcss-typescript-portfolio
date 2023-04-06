@@ -32,7 +32,7 @@ const HeroSection = () => {
               <span className="font-semibold text-teal-700">
                 Full Stack Developer{' '}
               </span>
-              and medical doctor based in Brisbane, Australia.
+              based in Brisbane, Australia.
             </p>
             <Link
               href="/"
