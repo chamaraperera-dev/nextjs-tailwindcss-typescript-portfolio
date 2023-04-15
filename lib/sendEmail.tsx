@@ -20,8 +20,9 @@ const sendEmail = async (
       },
     });
     return res;
-  } catch (err) {
+  } catch (err: any) {
     console.log(err);
+    throw new Error(err);
   }
 };
 
