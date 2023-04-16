@@ -1,26 +1,37 @@
 'use client';
 import { useState } from 'react';
-import useContactForm from '../hooks/useContactForm';
 import sendEmail from '../lib/sendEmail';
+import { useForm, SubmitHandler } from 'react-hook-form';
+
+interface FormInputs {
+  firstName: string;
+  lastName: string;
+  email: string;
+  subject: string;
+  message: string;
+}
 
 const ContactForm = () => {
-  const { values, handleChange, resetForm } = useContactForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<FormInputs>({ mode: 'onBlur' });
 
   const [responseMessage, setResponseMessage] = useState({
     isSuccessful: false,
     message: '',
   });
 
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
-
+  const onSubmit: SubmitHandler<FormInputs> = async (data) => {
     try {
       const req = await sendEmail(
-        values.firstName,
-        values.lastName,
-        values.email,
-        values.subject,
-        values.message
+        data.firstName,
+        data.lastName,
+        data.email,
+        data.subject,
+        data.message
       );
 
       if (req?.data.status === 250) {
@@ -28,7 +39,7 @@ const ContactForm = () => {
           isSuccessful: true,
           message: 'Thank you for the message. I will get back to you soon',
         });
-        resetForm();
+        reset();
       }
 
       if (req?.data.status === 500) {
@@ -49,6 +60,7 @@ const ContactForm = () => {
       setResponseMessage({ isSuccessful: false, message: '' });
     }, 5000);
   };
+
   return (
     <section id="contact">
       <div className="my-32">
@@ -59,7 +71,7 @@ const ContactForm = () => {
           className="flex align-center justify-center my-16
         "
         >
-          <form className="w-full max-w-lg " onSubmit={handleSubmit}>
+          <form className="w-full max-w-lg " onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-wrap mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
@@ -72,10 +84,14 @@ const ContactForm = () => {
                   className="appearance-none block w-full text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight border-gray-400 focus:outline-none focus:bg-white focus:border-red-500 dark:text-black dark:border-white dark:bg-white"
                   required
                   id="firstName"
-                  value={values.firstName}
-                  onChange={handleChange}
                   type="text"
+                  {...register('firstName', {
+                    required: true,
+                  })}
                 />
+                {errors.firstName && (
+                  <p className="text-red-500">{'First Name is required.'}</p>
+                )}
               </div>
 
               <div className="w-full md:w-1/2 px-3">
@@ -89,10 +105,12 @@ const ContactForm = () => {
                   className="appearance-none block w-full text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight border-gray-400 focus:outline-none focus:bg-white focus:border-red-500 dark:text-black dark:border-white dark:bg-white"
                   required
                   id="lastName"
-                  value={values.lastName}
-                  onChange={handleChange}
                   type="text"
+                  {...register('lastName', { required: true })}
                 />
+                {errors.lastName && (
+                  <p className="text-red-500">{'Last Name is required.'}</p>
+                )}
               </div>
             </div>
 
@@ -108,10 +126,18 @@ const ContactForm = () => {
                   className="appearance-none block w-full text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight border-gray-400 focus:outline-none focus:bg-white focus:border-red-500 dark:text-black dark:border-white dark:bg-white"
                   required
                   id="email"
-                  value={values.email}
-                  onChange={handleChange}
                   type="email"
+                  {...register('email', {
+                    required: 'Email is required.',
+                    pattern: {
+                      value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
+                      message: 'Email is not valid.',
+                    },
+                  })}
                 />
+                {errors.email && (
+                  <p className="text-red-500">{errors.email.message} </p>
+                )}
               </div>
             </div>
 
@@ -127,10 +153,12 @@ const ContactForm = () => {
                   className="appearance-none block w-full text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight border-gray-400 focus:outline-none focus:bg-white focus:border-red-500 dark:text-black dark:border-white dark:bg-white"
                   required
                   id="subject"
-                  value={values.subject}
-                  onChange={handleChange}
                   type="text"
+                  {...register('subject', { required: true })}
                 />
+                {errors.subject && (
+                  <p className="text-red-500">{'Subject is required.'}</p>
+                )}
               </div>
             </div>
 
@@ -146,10 +174,12 @@ const ContactForm = () => {
                   className=" no-resize appearance-none block w-full text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight border-gray-400 focus:outline-none focus:bg-white focus:border-red-500 h-48 resize-none dark:text-black dark:border-white dark:bg-white"
                   required
                   id="message"
-                  value={values.message}
-                  onChange={handleChange}
                   rows={8}
+                  {...register('message', { required: true })}
                 />
+                {errors.message && (
+                  <p className="text-red-500">{'Message is required.'}</p>
+                )}
               </div>
             </div>
             {responseMessage.message && (
