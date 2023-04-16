@@ -25,9 +25,9 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
     <header className="w-full mx-auto px-4 bg-white shadow fixed  top-0 z-50 sm:px-20 dark:bg-stone-900 dark:border-stone-600">
-      <div className="justify-between md:items-center md:flex ">
+      <div className="justify-between md:items-center md:flex  ">
         <div>
-          <div className="flex items-center py-3">
+          <div className="flex items-center py-3 justify-between">
             <Link href="/" to="home">
               <div className="md:py-6 md:block cursor-pointer">
                 <Image
