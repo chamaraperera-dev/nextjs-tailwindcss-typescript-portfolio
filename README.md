@@ -1,8 +1,12 @@
 # Portfolio Website
 
-This is my personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. The website showcases my personal projects and provides information about my skills and experience. It also features a contact form that allows visitors to send messages directly to my email using Nodemailer.
+## Features
 
-The website includes a dark mode that can be toggled on and off using a button in the header.
+- Responsive design using Tailwind CSS
+- TypeScript support
+- SEO optimization with Next.js Head component
+- Contact form with nodemailer and SendInBlue integration
+- Dark mode
 
 ## Deployment
 
