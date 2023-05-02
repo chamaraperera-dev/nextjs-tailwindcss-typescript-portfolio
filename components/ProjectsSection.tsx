@@ -46,7 +46,7 @@ const projects = [
 const ProjectSection = () => {
   return (
     <section id="projects">
-      <div className="my-32">
+      <div className="md:my-32 mx-8">
         <h1 className="text-center font-bold text-4xl"> Projects</h1>
         <hr className="w-6 h-1 mx-auto mt-4 mb-6 bg-teal-500 border-0 rounded"></hr>
         <div className="flex flex-col space-y-28"></div>
