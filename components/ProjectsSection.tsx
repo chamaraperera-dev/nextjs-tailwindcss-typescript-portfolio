@@ -14,14 +14,23 @@ const projects = [
     link: 'https://app.naturesights.com/',
   },
   {
-    name: 'Chamara Portfolio',
+    name: 'Chamara Web Development Portfolio',
     description:
-      'This is my personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.',
+      'This is my personal web development portfolio website built with Next.js, TypeScript, and Tailwind CSS.',
     image: '/chamara-portfolio.png',
     alt: 'chamara-portfolio-website',
     github:
       'https://github.com/chamaraperera-dev/nextjs-tailwindcss-typescript-portfolio',
     link: 'https://chamaraperera.dev/',
+  },
+  {
+    name: 'Chamara Perera Photography',
+    description:
+      'This is my personal photography portfolio website built with Next.js and TypeScript.It is integrated with Sanity Headless CMS and Cloudinary to optimize its performance.',
+    image: '/chamara-photography-portfolio.jpg',
+    alt: 'chamara-photography-portfolio',
+    github: '#',
+    link: 'https://chamaraperera.com/',
   },
   {
     name: 'Save Mother Lanka Project',
