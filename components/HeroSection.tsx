@@ -18,8 +18,10 @@ const HeroSection = () => {
               className="rounded-full shadow-2xl"
               src="/chamara-headshot.jpg"
               alt="chamara-headshot"
-              width={300}
-              height={300}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: '300px', height: 'auto' }}
             />
           </div>
           <div className="md:mt-2 md:w-3/5">

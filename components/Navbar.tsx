@@ -36,9 +36,12 @@ const Navbar = () => {
                       ? '/chamara-perera-logo-dark.png'
                       : '/chamara-perera-logo-light.png'
                   }
+                  width={0}
+                  height={0}
                   alt="chamara-perera-logo"
-                  width={300}
-                  height={300}
+                  sizes="100vw"
+                  style={{ width: '300px', height: 'auto' }}
+                  priority={true}
                 />
               </div>
             </Link>
