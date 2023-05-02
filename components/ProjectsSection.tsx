@@ -72,7 +72,7 @@ const ProjectSection = () => {
                     </Link>
                   </div>
                   <div className="mt-8 mb-20 md:w-1/2">
-                    <h1 className="text-xl md:text-3xl font-bold mb-6">
+                    <h1 className="text-xl md:text-2xl font-bold mb-6">
                       {project.name}
                     </h1>
                     <p className="text-lg md:text-xl leading-7 mb-8 text-neutral-600 dark:text-white">
