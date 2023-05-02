@@ -55,7 +55,7 @@ const ProjectSection = () => {
           return (
             <div key={id}>
               <SlideUp offset="-300px 0px">
-                <div className="flex flex-col  md:flex-row md:space-x-12 ">
+                <div className="flex flex-col md:flex-row md:space-x-12 md:mb-24">
                   <div className="mt-8 md:w-1/2">
                     <Link
                       href={project.link}
@@ -71,9 +71,11 @@ const ProjectSection = () => {
                       />
                     </Link>
                   </div>
-                  <div className="mt-20 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-8 text-neutral-600 dark:text-white">
+                  <div className="mt-8 mb-20 md:w-1/2">
+                    <h1 className="text-xl md:text-3xl font-bold mb-6">
+                      {project.name}
+                    </h1>
+                    <p className="text-lg md:text-xl leading-7 mb-8 text-neutral-600 dark:text-white">
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">

@@ -63,7 +63,7 @@ const ContactForm = () => {
 
   return (
     <section id="contact">
-      <div className="my-32">
+      <div className="md:my-32">
         <h1 className="text-center font-bold text-4xl "> Contact Me</h1>
         <hr className="w-6 h-1 mx-auto mt-4 mb-6 bg-teal-500 border-0 rounded"></hr>
 
@@ -197,7 +197,7 @@ const ContactForm = () => {
             <div className="flex flex-wrap mx-3 mb-6">
               <div className="w-full px-3">
                 <div className="md:flex md:items-center">
-                  <div className="md:w-1/3">
+                  <div className="md:mx-auto text-center">
                     <button
                       className="shadow bg-teal-700 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                       type="submit"
