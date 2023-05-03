@@ -17,7 +17,7 @@ const projects = [
     name: 'Chamara Web Development Portfolio',
     description:
       'This is my personal web development portfolio website built with Next.js, TypeScript, and Tailwind CSS.',
-    image: '/chamara-portfolio.png',
+    image: '/chamara-portfolio.jpg',
     alt: 'chamara-portfolio-website',
     github:
       'https://github.com/chamaraperera-dev/nextjs-tailwindcss-typescript-portfolio',
