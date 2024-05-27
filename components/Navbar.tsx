@@ -23,6 +23,10 @@ const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === 'system' ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
+  const logoSrc =
+    currentTheme === 'dark'
+      ? '/chamara-perera-logo-dark.png'
+      : '/chamara-perera-logo-light.png';
   return (
     <header className="w-full mx-auto px-4 bg-white shadow fixed  top-0 z-50 sm:px-20 dark:bg-stone-900 dark:border-stone-600">
       <div className="justify-between md:items-center md:flex  ">
@@ -31,11 +35,7 @@ const Navbar = () => {
             <Link href="/" to="home">
               <div className="md:py-6 md:block cursor-pointer">
                 <Image
-                  src={
-                    theme === 'dark'
-                      ? '/chamara-perera-logo-dark.png'
-                      : '/chamara-perera-logo-light.png'
-                  }
+                  src={logoSrc}
                   width={0}
                   height={0}
                   alt="chamara-perera-logo"
