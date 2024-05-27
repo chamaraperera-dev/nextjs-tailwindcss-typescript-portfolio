@@ -30,9 +30,10 @@ const HeroSection = () => {
               Hi, I&#39;m Chamara!{' '}
             </h1>
             <p className="text-lg mt-6 mb-10 md:text-2xl">
-              I&#39;m a {''}
+              I&#39;m an {''}
               <span className="font-semibold text-teal-700">
-                Full Stack Developer{' '}
+                AWS Certified Solutions Architect Professional & Full Stack
+                Developer{' '}
               </span>
               based in Brisbane, Australia.
             </p>

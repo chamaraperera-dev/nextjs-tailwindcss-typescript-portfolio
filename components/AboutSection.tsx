@@ -23,40 +23,15 @@ const skills = [
     alt: 'typescript',
   },
   {
-    link: 'https://www.figma.com/',
-    src: './logos/figma.svg',
-    alt: 'figma',
-  },
-  {
-    link: 'https://getbootstrap.com',
-    src: './logos/bootstrap.svg',
-    alt: 'bootstrap',
-  },
-  {
     link: 'https://tailwindcss.com/',
     src: './logos/tailwind.svg',
     alt: 'tailwind',
-  },
-  {
-    link: 'https://sass-lang.com',
-    src: '/logos/sass.svg',
-    alt: 'sass',
-  },
-  {
-    link: 'https://gulpjs.com',
-    src: './logos/gulp.svg',
-    alt: 'gulp',
   },
 
   {
     link: 'https://reactjs.org/',
     src: './logos/react.svg',
     alt: 'react',
-  },
-  {
-    link: 'https://redux.js.org',
-    src: './logos/redux.svg',
-    alt: 'redux',
   },
   {
     link: 'https://nextjs.org/',
@@ -67,16 +42,6 @@ const skills = [
     link: 'https://www.mongodb.com/',
     src: '/logos/mongodb.svg',
     alt: 'mongodb',
-  },
-  {
-    link: 'https://www.mysql.com/',
-    src: './logos/mysql.svg',
-    alt: 'mysql',
-  },
-  {
-    link: 'https://www.npmjs.com',
-    src: './logos/npm.svg',
-    alt: 'npm',
   },
   {
     link: 'https://nodejs.org',
@@ -98,29 +63,20 @@ const skills = [
     src: './logos/elementor.svg',
     alt: 'elementor',
   },
-  {
-    link: 'https://jestjs.io',
-    src: './logos/jest.svg',
-    alt: 'jest',
-  },
-  {
-    link: 'https://parceljs.org',
-    src: './logos/parcel.svg',
-    alt: 'parcel',
-  },
+
   {
     link: 'https://git-scm.com/',
     src: './logos/git.svg',
     alt: 'git',
   },
   {
-    link: 'https://www.docker.com/',
-    src: './logos/docker.svg',
-    alt: 'docker',
+    link: 'https://aws.com',
+    src: './logos/aws.svg',
+    alt: 'heroku',
   },
   {
-    link: 'https://heroku.com',
-    src: './logos/heroku.svg',
+    link: 'https://terraform.io',
+    src: './logos/terraform.svg',
     alt: 'heroku',
   },
 ];
@@ -141,35 +97,44 @@ const AboutSection = () => {
               {''}
               Hi, my name is Chamara and I am a {''}
               <span className="font-bold">{'passionate'}</span>,
-              <span className="font-bold">{' self-motivated'}</span>, full stack
-              developer based in Brisbane, Australia.
+              <span className="font-bold">{' innovative'}</span>, AWS certified
+              Solutions Architect Professional, Full stack developer and a
+              Specialist General Practitioner based in Brisbane, Australia.
             </p>
             <br />
             <p>
-              With a passion for both medicine and technology, I have been able
-              to combine my skills to create innovative solutions that can help
-              people.
+              With a unique blend of skills in medicine and technology, my
+              mission is to harness the power of cutting-edge technology to
+              enhance healthcare solutions and ultimately improve patient
+              outcomes.
             </p>
             <br />
             <p>
               I specialize in using the MERN (MongoDB, Express, React, Node.js)
-              stack for web development, as well as HTML, CSS,
-              JavaScript,TypeScript and Wordpress. My expertise in these
-              technologies allows me to create dynamic and efficient web
-              applications that are user-friendly and accessible.
+              stack for web development, as well as HTML, CSS, JavaScript,
+              TypeScript, and WordPress. My expertise in these technologies
+              allows me to create dynamic, efficient, and user-friendly web
+              applications that are accessible to everyone.
             </p>
             <br />
             <p>
-              As a medical doctor, I have a deep understanding of how technology
-              can improve the healthcare industry. I am always looking for ways
-              to incorporate technology into healthcare to improve patient
-              outcomes and make medical care more accessible to everyone.
+              Having recently passed the AWS Solutions Architect Professional,
+              Developer, and SysOps Administrator Associate exams, as well as
+              the Terraform Associate Exam, I am deepening my knowledge of AWS
+              services and AWS Healthcare Solutions to effectively leverage
+              cloud technology in healthcare.
+            </p>
+            <br />
+            <p>
+              My dual background positions me at the intersection of medicine
+              and technology, allowing me to envision and create solutions that
+              bridge gaps in the healthcare industry.
             </p>
             <br />
             <p>
               If you&#39;re interested in collaborating on a project or just
-              want to connect, feel free to reach out to me. I&#39;m always open
-              to new opportunities and challenges!
+              want to connect, feel free to reach out. I&#39;m always open to
+              new opportunities and challenges!
             </p>
           </div>
           <div className="md:w-1/2 px-4">
@@ -177,7 +142,7 @@ const AboutSection = () => {
               My skills
             </h1>
 
-            <div className="grid grid-cols-4 gap-5  ">
+            <div className="grid grid-cols-3 gap-4  ">
               {skills.map((item, id) => {
                 return (
                   <p key={id}>
@@ -190,8 +155,8 @@ const AboutSection = () => {
                       <Image
                         src={item.src}
                         alt={item.alt}
-                        width="60"
-                        height="60"
+                        width="80"
+                        height="80"
                       />
                     </a>
                   </p>

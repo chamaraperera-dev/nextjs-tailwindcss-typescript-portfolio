@@ -32,15 +32,6 @@ const projects = [
     github: '#',
     link: 'https://chamaraperera.com/',
   },
-  {
-    name: 'Save Mother Lanka Project',
-    description:
-      'This is a website created for a Healthcare crisis management fund in Sri Lanka. The website is built using WordPress and Elementor.',
-    image: '/savemotherlanka.png',
-    alt: 'savemotherlanka-website',
-    github: '#',
-    link: 'https://savemotherlanka.org/',
-  },
 ];
 
 const ProjectSection = () => {
